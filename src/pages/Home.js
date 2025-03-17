@@ -195,7 +195,7 @@ function Home() {
                   <Icon
                     name="twitter"
                     style={{
-                      color: "#000",
+                      color: "#1DA1F2",
                       fontSize: "20px",
                     }}
                   />
@@ -206,7 +206,7 @@ function Home() {
                   <Icon
                     name="telegram"
                     style={{
-                      color: "#000",
+                      color: "#0088CC",
                       fontSize: "20px",
                     }}
                   />
@@ -217,7 +217,7 @@ function Home() {
                   <Icon
                     name="linkedin"
                     style={{
-                      color: "#000",
+                      color: "#0A66C2",
                       fontSize: "20px",
                     }}
                   />
@@ -228,7 +228,7 @@ function Home() {
                   <Icon
                     name="discord"
                     style={{
-                      color: "#000",
+                      color: "#5865F2",
                       fontSize: "20px",
                     }}
                   />
@@ -239,7 +239,7 @@ function Home() {
                   <Icon
                     name="medium"
                     style={{
-                      color: "#000",
+                      color: "#12100E",
                       fontSize: "20px",
                     }}
                   />
@@ -251,7 +251,7 @@ function Home() {
                   <Icon
                     name="facebook"
                     style={{
-                      color: "#000",
+                      color: "#1877F2",
                       fontSize: "20px",
                     }}
                   />
