@@ -189,11 +189,80 @@ function Home() {
             className="footer__content"
             style={{ textAlign: "center", marginTop: "20px" }}
           >
+            <div className="socials__container">
+              <div className="socials__items">
+                <Link to="https://twitter.com/0x3Devoid">
+                  <Icon
+                    name="twitter"
+                    style={{
+                      color: "#000",
+                      fontSize: "20px",
+                    }}
+                  />
+                </Link>
+              </div>
+              <div className="socials__items">
+                <Link>
+                  <Icon
+                    name="telegram"
+                    style={{
+                      color: "#000",
+                      fontSize: "20px",
+                    }}
+                  />
+                </Link>
+              </div>
+              <div className="socials__items">
+                <Link>
+                  <Icon
+                    name="linkedin"
+                    style={{
+                      color: "#000",
+                      fontSize: "20px",
+                    }}
+                  />
+                </Link>
+              </div>
+              <div className="socials__items">
+                <Link>
+                  <Icon
+                    name="discord"
+                    style={{
+                      color: "#000",
+                      fontSize: "20px",
+                    }}
+                  />
+                </Link>
+              </div>
+              <div className="socials__items">
+                <Link>
+                  <Icon
+                    name="medium"
+                    style={{
+                      color: "#000",
+                      fontSize: "20px",
+                    }}
+                  />
+                </Link>
+              </div>
+
+              <div className="socials__items">
+                <Link>
+                  <Icon
+                    name="facebook"
+                    style={{
+                      color: "#000",
+                      fontSize: "20px",
+                    }}
+                  />
+                </Link>
+              </div>
+            </div>
             <p style={{ fontSize: "10px", color: "gray" }}>0x3devoid © 2025</p>
           </div>
         </footer>
       </Container>
-    </ div>
+    </div>
   );
 }
 
