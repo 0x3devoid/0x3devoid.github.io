@@ -1,7 +1,7 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { ImagesFile } from "../components/ImagesFile.js";
 import "../assets/styles/style.css";
-import { Button, Container, Form, Input } from "semantic-ui-react";
+import { Button, Container, Form, Input, Icon } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import About from "../components/About";
 import Contact from "../components/Contact";
@@ -10,7 +10,7 @@ import Projects from "../components/Projects.js";
 function Home() {
   const [activeTab, setActiveTab] = useState("Projects"); // Default active tab
 
-  const navItems = ["Projects", "About", "Contact"];
+  const navItems = ["Projects", "About", "Contact", "Docs"];
   const {
     dev,
     beast,
@@ -25,7 +25,7 @@ function Home() {
     date,
   } = ImagesFile;
   return (
-    <>
+    <div className="container">
       <Container>
         <header>
           <div className="header__icon__container">
@@ -46,13 +46,41 @@ function Home() {
           <img src={devoid} alt="devoid" />
         </div>
         <Link to="https://x.com/0x3Devoid">
-          <button>Follow</button>
+          <Button
+            type="button"
+            style={{
+              backgroundColor: "#a598fa",
+              color: "#fff",
+              borderRadius: "50px",
+              marginTop: "-40px",
+              fontSize: "12px",
+            }}
+          >
+            <Icon
+              name="twitter"
+              style={{
+                color: "#fff",
+                fontSize: "15px",
+              }}
+            />
+            Follow
+          </Button>
         </Link>
       </div>
 
       <Container>
         <div className="header__content">
-          <h1>Owoyemi Idris .O.</h1>
+          <h1>
+            {" "}
+            <Icon
+              name="user"
+              style={{
+                color: "#a598fa",
+                fontSize: "20px",
+              }}
+            />{" "}
+            Owoyemi Idris .O.{" "}
+          </h1>
           <p>Software Developer | Blockchain Dev | Tech Enthusiast</p>
         </div>
 
@@ -85,28 +113,43 @@ function Home() {
 
           <Form>
             <Form.Group>
-              <Input placeholder="Email Address" required />
+              <Input placeholder="Email Address" type="email" required />
               <Button
                 type="submit"
-                style={{ backgroundColor: "#C8A2C8", color: "#fff" }}
+                style={{
+                  backgroundColor: "#a598fa",
+                  color: "#fff",
+                  borderRadius: "50px",
+                }}
               >
+                <Icon
+                  name="mail"
+                  style={{
+                    color: "#fff",
+                    fontSize: "15px",
+                  }}
+                />
                 Subscribe
               </Button>
             </Form.Group>
           </Form>
 
-          <i style={{
-            fontSize: "10px",
-           
-          }}>No spam. Unsubscribe any time.</i>
+          <i
+            style={{
+              fontSize: "10px",
+            }}
+          >
+            No spam. Unsubscribe any time.
+          </i>
         </div>
 
         <div>
-          <nav
-          >
+          <nav>
             <ul
               style={{
                 display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center",
                 listStyle: "none",
                 padding: 0,
                 gap: "20px",
@@ -116,13 +159,14 @@ function Home() {
                 <li
                   key={item}
                   onClick={() => setActiveTab(item)}
+                  className="nav__items"
                   style={{
                     cursor: "pointer",
                     padding: "8px 12px",
                     borderBottom:
-                      activeTab === item ? "3px solid #C8A2C8" : "none",
+                      activeTab === item ? "3px solid #a598fa" : "none",
                     fontWeight: activeTab === item ? "bolder" : "bold",
-                    color: activeTab === item ? "#C8A2C8" : "#333",
+                    color: activeTab === item ? "#a598fa" : "#333",
                     transition: "0.3s",
                   }}
                 >
@@ -136,18 +180,20 @@ function Home() {
             {activeTab === "Projects" && <Projects />}
             {activeTab === "About" && <About />}
             {activeTab === "Contact" && <Contact />}
+            {activeTab === "Docs" && "Docs"}
           </div>
         </div>
 
-
-
         <footer>
-            <div className="footer__content" style={{textAlign: "center"}}>
-                <p style={{fontSize: "10px", color: "gray"}}>0x3devoid © 2025</p>
-            </div>
+          <div
+            className="footer__content"
+            style={{ textAlign: "center", marginTop: "20px" }}
+          >
+            <p style={{ fontSize: "10px", color: "gray" }}>0x3devoid © 2025</p>
+          </div>
         </footer>
       </Container>
-    </>
+    </ div>
   );
 }
 

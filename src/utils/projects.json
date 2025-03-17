@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Project 1",
+        "description": "This is a project description",
+        "image": "https://via.placeholder.com/150",
+        "link": "https://www.google.com",
+        "type": "web2"
+    },
+    {
+        "name": "Project 2",
+        "description": "This is a project description",
+        "image": "https://via.placeholder.com/150",
+        "link": "https://www.google.com",
+        "type": "web2"
+    },
+    {
+        "name": "Project 3",
+        "description": "This is a project description",
+        "image": "https://via.placeholder.com/150",
+        "link": "https://www.google.com",
+        "type": "web2"
+    }
+]
