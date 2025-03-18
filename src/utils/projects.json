@@ -4,7 +4,8 @@
         "description": "This is a project description",
         "image": "https://via.placeholder.com/150",
         "link": "https://www.google.com",
-        "type": "web2"
+        "type": "web2",
+        "language": ["REACT", "SOLIDITY"]
     },
     {
         "name": "Project 2",

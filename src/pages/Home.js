@@ -187,7 +187,7 @@ function Home() {
         <footer>
           <div
             className="footer__content"
-            style={{ textAlign: "center", marginTop: "20px" }}
+            style={{ textAlign: "center", marginTop: "50px" }}
           >
             <div className="socials__container">
               <div className="socials__items">

@@ -137,6 +137,36 @@ a{
     margin-bottom: 15px;
 }
 
+.contact__container{
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+.contact__container .line__thick{
+    width: 25px;
+    height: 2px;
+    background: #a598fa;
+    margin-top: 10px; 
+    margin-right: 10px;   
+}
+
+.contact__container .contact__header{
+    display: flex;
+    /* align-items: center; */
+}
+.contact__container .contact__header {
+    color: limegreen;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 800;
+}
+
+.contact__container h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+
 @media screen and (min-width: 768px){
 
    .container{
