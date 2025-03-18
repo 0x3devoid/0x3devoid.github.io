@@ -4,8 +4,8 @@ import { Form, Button } from "semantic-ui-react";
 function Contact() {
   return (
     <div className="contact__container">
-      <p className="contact__header">
-        <p className="line__thick"></p>DROP A MESSAGE
+      <p className="contact__header gradient-text">
+        <p className="line__thick gradient-text"></p>DROP A MESSAGE
       </p>
 
       <h2>Kindly fill up the form</h2>
